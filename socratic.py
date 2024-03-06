@@ -3,7 +3,7 @@ import streamlit as st
 from langchain_openai import ChatOpenAI
 
 
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+# os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 
 mixtral = ChatOpenAI(
@@ -12,8 +12,8 @@ mixtral = ChatOpenAI(
     openai_api_key = st.secrets["GROQ_API_KEY"]
 )
 
-st.header("Learn through Socratic Method.")
-st.write("Learn any topic through dialogues.")
+st.header("🧘 Learn through Socratic Method.")
+st.write("Learn any topic through dialogues. 📒")
 
 # Define the levels
 levels = ["a child", "a teen", "a college student", "a grad student", "an expert"]
