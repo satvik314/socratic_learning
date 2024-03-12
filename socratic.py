@@ -6,10 +6,16 @@ from langchain_openai import ChatOpenAI
 # os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 
+# mixtral = ChatOpenAI(
+#     model = "mixtral-8x7b-32768",
+#     openai_api_base = "https://api.groq.com/openai/v1",
+#     openai_api_key = st.secrets["GROQ_API_KEY"]
+# )
+
 mixtral = ChatOpenAI(
-    model = "mixtral-8x7b-32768",
-    openai_api_base = "https://api.groq.com/openai/v1",
-    openai_api_key = st.secrets["GROQ_API_KEY"]
+    model = "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    openai_api_base = "https://api.endpoints.anyscale.com/v1",
+    openai_api_key = st.secrets["ANYSCALE_API_KEY"]
 )
 
 st.header("🧘 Learn through Socratic Method.")
